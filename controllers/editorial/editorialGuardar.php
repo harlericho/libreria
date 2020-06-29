@@ -2,9 +2,9 @@
 $nombre = $_POST['txtnombreed'];
 $email = $_POST['txtemailed'];
 $datos = array(
-    'nombre' => $_POST['txtnombreed'],
-    'direccion' => $_POST['txtdireccioned'],
-    'email' => $_POST['txtemailed'],
+    'nombre' =>  strtoupper($_POST['txtnombreed']),
+    'direccion' => strtoupper($_POST['txtdireccioned']),
+    'email' => strtolower($_POST['txtemailed']),
     'estado' => $_POST['selectestadoed'],
     'id_pais' => $_POST['selectpaised'],
 );
