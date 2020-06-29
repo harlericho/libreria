@@ -1,13 +1,13 @@
-<?php include "../data/crudEditorial.php"; //llamamos al crud
+<?php include "../../data/crudEditorial.php"; //llamamos al crud
 $obj = new CrudEditorial;
 $datos = $obj->_listadoEditorial();
 $tabla = '<table class="table table-striped table-bordered table-hover" id="dataTables-example">
             <thead>
             <tr>
-                 <th>#</th>
                  <th>Nombre</th>
                  <th>Direccion</th>
                  <th>Email</th>
+                 <th>Origen</th>
                  <th>Estado</th>
                  <th>Acciones</th>
             </tr>
@@ -16,10 +16,10 @@ $tabla = '<table class="table table-striped table-bordered table-hover" id="data
 $datostabla = "";
 foreach ($datos as $key => $value) {
     $datostabla = $datostabla . '<tr>
-                               <th >' . $value['id_editorial'] . '</th>
                                <th>' . $value['nombre'] . '</th>
                                <th>' . $value['direccion'] . '</th>
                                <th>' . $value['email'] . '</th>
+                               <th>' . $value['pais'] . '</th>
                                <th>
                                <button type="button" class="btn btn-success btn-circle">
                                <i class="fa fa-font"></i></button>

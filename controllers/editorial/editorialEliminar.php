@@ -1,4 +1,4 @@
-<?php include "../data/crudEditorial.php"; //llamamos al crud
+<?php include "../../data/crudEditorial.php"; //llamamos al crud
 $estado = 'I';
 $datos = array(
     'id_editorial' => $_POST['txtidedel'],

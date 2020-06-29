@@ -4,7 +4,11 @@ class CrudEditorial extends Conexion
     //listado del editorial
     static function _listadoEditorial()
     {
-        $sql = "SELECT * FROM editorial WHERE estado='A'";
+        $sql = "SELECT
+        e.id_editorial,e.nombre,e.direccion,e.email,e.estado,p.pais
+        FROM editorial e 
+        INNER JOIN pais p ON e.id_pais=p.id_pais
+        WHERE e.estado='A'";
         $query = Conexion::_conectarBD()->prepare($sql);
         $query->execute();
         return $query->fetchAll();

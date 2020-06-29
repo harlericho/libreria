@@ -1,4 +1,4 @@
-<?php include "../data/crudEditorial.php"; //llamamos al crud
+<?php include "../../data/crudEditorial.php"; //llamamos al crud
 foreach (CrudEditorial::_obtenerID($_POST['id']) as $key => $value) {
     $datos = array(
         'id_editorial' => $value['id_editorial'],

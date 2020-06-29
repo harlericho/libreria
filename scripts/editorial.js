@@ -2,7 +2,7 @@
 function vistaEditorial() {
     $.ajax({
         type: "POST",
-        url: "../controllers/editorialListado.php",
+        url: "../controllers/editorial/editorialListado.php",
         cache: false,
         success: function (r) {
             $("#tablaEditorial").html(r);
@@ -22,7 +22,7 @@ function guardarEditorial() {
 function ajaxGuardarEditorial(datos) {
     $.ajax({
         type: "POST",
-        url: "../controllers/editorialGuardar.php",
+        url: "../controllers/editorial/editorialGuardar.php",
         data: datos,
         cache: false,
         success: function (response) {
@@ -48,7 +48,7 @@ function editarId(id) {
     $.ajax({
         type: 'POST',
         data: "id=" + id,
-        url: '../controllers/editoriaObtenerID.php',
+        url: '../controllers/editorial/editoriaObtenerID.php',
         cache: false,
         success: function (r) {
             r = JSON.parse(r);
@@ -67,7 +67,7 @@ function eliminarId(id) {
     $.ajax({
         type: 'POST',
         data: "id=" + id,
-        url: '../controllers/editoriaObtenerID.php',
+        url: '../controllers/editorial/editoriaObtenerID.php',
         cache: false,
         success: function (r) {
             r = JSON.parse(r);
@@ -92,7 +92,7 @@ function modificarEditorial() {
 function ajaxModificarEditorial(datos) {
     $.ajax({
         type: "POST",
-        url: "../controllers/editorialModificar.php",
+        url: "../controllers/editorial/editorialModificar.php",
         data: datos,
         cache: false,
         success: function (response) {
@@ -110,7 +110,7 @@ function eliminarEditorial(params) {
     let formData = $("#formeliminareditorial").serialize();//pasamos todas las variables del formulario modal
     $.ajax({
         type: "POST",
-        url: "../controllers/editorialEliminar.php",
+        url: "../controllers/editorial/editorialEliminar.php",
         data: formData,
         cache: false,
         success: function (response) {
