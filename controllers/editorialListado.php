@@ -26,13 +26,13 @@ foreach ($datos as $key => $value) {
                                </th>
                                <th>
                                <button type="button" class="btn btn-primary btn-sm" title="Editar" 
-                                                data-toggle="modal" data-target="#modalEditTec"
-                                                onclick="#">
+                                                data-toggle="modal" data-target="#modalEditEditorial"
+                                                onclick="editarId('.$value['id_editorial'].')">
                                             <i class="fa fa-edit"></i>
                                         </button>
                                         <button type="button" class="btn btn-danger btn-sm" title="Eliminar" 
-                                                data-toggle="modal" data-target="#modalDeleteTec"
-                                                onclick="#">
+                                                data-toggle="modal" data-target="#modalEliminarEditorial"
+                                                onclick="eliminarId('.$value['id_editorial'].')">
                                             <i class="fa fa-trash"></i>
                                         </button>
                                </th>

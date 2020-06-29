@@ -29,4 +29,5 @@
 
 <script type="text/javascript">
     vistaEditorial();
+    focusInical();
 </script>
