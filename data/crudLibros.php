@@ -88,9 +88,10 @@ class CrudLibros extends Conexion
     //obtenemos el id
     static function _obtenerID($id)
     {
-        $sql = "SELECT l.id_libro,
+        $sql = "SELECT l.id_libro, e.nombre,
         l.titulo,l.descripcion,l.num_paginas,l.edicion,l.portada,l.ann,l.estado,l.id_editorial
         FROM libro l
+        INNER JOIN editorial e ON l.id_editorial=e.id_editorial
         WHERE l.id_libro=:id";
         $query = Conexion::_conectarBD()->prepare($sql);
         $query->bindParam(":id", $id, PDO::PARAM_INT);

@@ -125,9 +125,13 @@
                     <input type="hidden" id=txtidedel name="txtidedel">
                     <fieldset>
                         <center>
-                        <div class="form-group col-sm-12">
-                            <label for="disabledSelect"><h4>¿ Esta seguro que desea eliminar esta editorial ?</h4></label>
-                        </div>
+                            <div class="form-group col-sm-12">
+                                <label for="disabledSelect">
+                                    <h4>¿ Esta seguro que desea eliminar esta editorial ?</h4>
+                                </label>
+                                <h4 id="txtnombreedel" style="font-size: x-large; color:brown"></h4>
+                                <h5 id="txtdireccionedel" style="font-size: medium; color:crimson"></h5>
+                            </div>
                         </center>
                     </fieldset>
                 </form>

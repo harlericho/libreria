@@ -135,6 +135,9 @@ function eliminarId(id) {
         success: function (r) {
             r = JSON.parse(r);
             $('#txtidlibel').val(r['id_libro']);
+            $('#txttituloLibel').html(r['titulo']);
+            $('#txteditorial').html(r['nombre_editorial']);
+            
         }
     });
 }

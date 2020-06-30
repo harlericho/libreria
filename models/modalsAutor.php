@@ -118,6 +118,8 @@
                         <div class="form-group col-sm-12">
                             <label for="disabledSelect"><h4>¿ Esta seguro que desea eliminar este autor ?</h4></label>
                         </div>
+                        <h4 id="txtnombreauel" style="font-size: x-large; color:brown"></h4>
+                        <h5 id="txtemailauel" style="font-size: medium; color:crimson"></h5>
                         </center>
                     </fieldset>
                 </form>

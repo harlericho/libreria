@@ -123,6 +123,8 @@ function eliminarId(id) {
         success: function (r) {
             r = JSON.parse(r);
             $('#txtidauel').val(r['id_autor']);
+            $('#txtnombreauel').html(r['nombre']);
+            $('#txtemailauel').html(r['email']);
         }
     });
 }

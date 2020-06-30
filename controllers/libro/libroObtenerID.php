@@ -10,6 +10,7 @@ foreach (CrudLibros::_obtenerID($_POST['id']) as $key => $value) {
         'ann' => $value['ann'],
         'estado' => $value['estado'],
         'id_editorial' => $value['id_editorial'],
+        'nombre_editorial' => $value['nombre'],
     );
 }
 echo json_encode($datos);

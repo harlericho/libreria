@@ -72,6 +72,8 @@ function eliminarId(id) {
         success: function (r) {
             r = JSON.parse(r);
             $('#txtidedel').val(r['id_editorial']);
+            $('#txtnombreedel').html(r['nombre']);
+            $('#txtdireccionedel').html(r['direccion']);
         }
     });
 }
