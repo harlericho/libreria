@@ -54,6 +54,16 @@
             </li>
 
             <li>
+                <a href="#"><i class="fa fa-flag"></i> Pais<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="../views/vistaPais.php">Mostrar</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+
+            <li>
                 <a href="#"><i class="fa fa-user"></i> Perfil<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>

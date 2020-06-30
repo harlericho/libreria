@@ -208,7 +208,7 @@ function validacionEmail(valor) {
 
 //funcion para poner el autofocus inicial en el modal
 function focusInicial() {
-    $('body').on('shown.bs.modal', '#modalAddEditorial', function () {
+    $('body').on('shown.bs.modal', '#modalAddAutor', function () {
         $('select:input:visible:enabled:first', this).focus();
     })
 }

@@ -6,9 +6,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Sistema Libreria</h1>
+                    <h1 class="page-header">Origenes</h1>
                 </div>
-                <?php include "../models/listadoLibros.php"; ?>
+                <div class="panel-heading">
+                    <button type="button" class="btn btn-primary" title="Nuevo registro"
+                    data-toggle="modal" data-target="#modalAddPais">
+                        <i class="fa fa-plus"></i> Nuevo
+                    </button>
+                    <?php include "../models/modalsPais.php"?>
+                </div>
+                <?php include "../models/listadoPais.php"; ?>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
@@ -17,10 +24,10 @@
     </div>
     <!-- /#page-wrapper -->
 </div>
-<?php include "../models/modalPresentacion.php" ?>
+
 <?php include "../templates/footer.php" ?>
 
 <script type="text/javascript">
-    vistaGeneralLibros();
+    vistaPais();
+    focusInicial();
 </script>
-<script src="../scripts/modalInicial.js" type="text/javascript"></script>
