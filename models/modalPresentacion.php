@@ -13,7 +13,7 @@
                 Sustema realizado por: <a href="https://twitter.com/CarlChokSanc">CarlChokSanc.</a>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-check"></i> Aceptar</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" title="Aceptar"><i class="fa fa-check"></i> Aceptar</button>
             </div>
         </div>
         <!-- /.modal-content -->

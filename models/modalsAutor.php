@@ -39,8 +39,8 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" title="Cerrar"><i class="fa fa-reply"></i> Close</button>
-                <button type="button" class="btn btn-primary" title="Gaurdar" onclick="guardarAutor()"><i class="fa fa-save"></i> Guardar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" title="Cerrar"><i class="fa fa-reply"></i> Cerrar</button>
+                <button type="button" class="btn btn-primary" title="Guardar" onclick="guardarAutor()"><i class="fa fa-save"></i> Guardar</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -91,7 +91,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" title="Cerrar"><i class="fa fa-reply"></i> Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" title="Cerrar"><i class="fa fa-reply"></i> Cerrar</button>
                 <button type="button" class="btn btn-primary" title="Modificar" onclick="modificarAutor()"><i class="fa fa-save"></i> Modificar</button>
             </div>
         </div>
@@ -123,7 +123,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" title="Cerrar" onclick="modalCerrado()"><i class="fa fa-reply"></i> Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" title="Cerrar" onclick="modalCerrado()"><i class="fa fa-reply"></i> Cerrar</button>
                 <button type="button" class="btn btn-danger" title="Eliminar" onclick="eliminarAutor()"><i class="fa fa-trash"></i> Eliminar</button>
             </div>
         </div>

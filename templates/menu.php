@@ -39,6 +39,9 @@
                     <li>
                         <a href="#">Mostrar</a>
                     </li>
+                    <li>
+                        <a href="#">Genero</a>
+                    </li>
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
@@ -64,10 +67,30 @@
             </li>
 
             <li>
+                <a href="#"><i class="fa fa-bookmark"></i> Genero<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="../views/vistaGenero.php">Mostrar</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+
+            <li>
                 <a href="#"><i class="fa fa-user"></i> Perfil<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
                         <a href="#">Actualizar</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-key"></i> Rol<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="../views/vistaRol.php">Mostrar</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
