@@ -37,7 +37,7 @@
                 <a href="#"><i class="fa fa-book"></i> Libro<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="#">Mostrar</a>
+                        <a href="../views/vistaLibro.php">Mostrar</a>
                     </li>
                     <li>
                         <a href="#">Genero</a>

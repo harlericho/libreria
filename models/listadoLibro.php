@@ -1,14 +1,13 @@
-
 <!-- /.row -->
 <div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Registro de los libros en general
+                Registro de los libros
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
-                <div id="tablalibros" class="table-responsive">
+                <div id="tablalibro" class="table-responsive">
                    
                 </div>
             </div>

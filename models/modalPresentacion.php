@@ -7,9 +7,10 @@
                 <h4 class="modal-title" id="myModalLabel"><i class="fa fa-info"></i> Sistema Libreria</h4>
             </div>
             <div class="modal-body">
-                Sistema de libreria que permite al usuario buscar un libro en particular
-                con el fin de comprar dicho producto,aqui encontraras diversos autores de difernte editorial.<br>
-                <br>
+                Este sistema de libreria nos permite visualizar los libros de diferentes autor con su respectivo editorial,
+                cada libro tiene un stock maximo y minimo con su precio.
+                El sistema esta desarrollado en PHP con AJAX-JS-JQUERY, y usamos como gestor de base de datos MYSQL.
+                <br><br>
                 Sustema realizado por: <a href="https://twitter.com/CarlChokSanc">CarlChokSanc.</a>
             </div>
             <div class="modal-footer">
