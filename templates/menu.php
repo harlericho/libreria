@@ -40,7 +40,7 @@
                         <a href="../views/vistaLibro.php">Mostrar</a>
                     </li>
                     <li>
-                        <a href="#">Genero</a>
+                        <a href="../views/vistaLibroGenero.php">Genero</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->

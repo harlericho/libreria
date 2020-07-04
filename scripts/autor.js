@@ -46,7 +46,7 @@ function ajaxGuardarAutor(datos) {
 
 //funcion para modificar
 function modificarAutor() {
-    if (validacionModalAEditAutor() == true) {
+    if (validacionModalEditAutor== true) {
         let formData = $("#formeditautor").serialize();//pasamos todas las variables del formulario modal
         ajaxModificarAutor(formData);
     }
@@ -166,7 +166,7 @@ function validacionModalAddAutor() {
 }
 
 // funcion para validaciones de los campos
-function validacionModalAEditAutor() {
+function validacionModalEditAutor() {
     let nombreau = $('#txtnombreaued').val();
     let emailau = $('#txtemailaued').val();
     let idpais = $('#selectpaisaued').val();
