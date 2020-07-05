@@ -9,6 +9,9 @@ function vistaLibroGenero() {
     });
 }
 
+function observacion() {
+    toastr.info("Solo se muestran los libros que no tienen genero!", "Aviso!");
+}
 
 //funcion para guardar
 function guardarLibGen() {

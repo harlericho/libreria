@@ -6,16 +6,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Libros Generos</h1>
+                    <h1 class="page-header">Stock</h1>
                 </div>
                 <div class="panel-heading">
                     <button type="button" class="btn btn-primary" title="Nuevo registro"
-                    data-toggle="modal" data-target="#modalAddLibroGen" onclick="observacion()">
+                    data-toggle="modal" data-target="#modalAddStock" onclick="observacion()">
                         <i class="fa fa-plus"></i> Nuevo
                     </button>
-                    <?php include "../models/modalsLibroGenero.php"?>
+                    <?php include "../models/modalsStock.php"?>
                 </div>
-                <?php include "../models/listadolibroGenero.php"; ?>
+                <?php include "../models/listadoStock.php"; ?>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
@@ -28,6 +28,7 @@
 <?php include "../templates/footer.php" ?>
 
 <script type="text/javascript">
-    vistaLibroGenero();
+    vistaStock();
     focusInicial();
+    decimales();
 </script>

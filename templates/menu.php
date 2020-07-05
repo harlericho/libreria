@@ -50,7 +50,7 @@
                 <a href="#"><i class="fa fa-outdent"></i> Stock<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="#">Mostrar</a>
+                        <a href="../views/vistaStock.php">Mostrar</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
