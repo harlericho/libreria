@@ -1,4 +1,4 @@
-<?php include "../../data/crudEditorial.php"; //llamamos al crud
+<?php include_once "../../data/crudEditorial.php"; //llamamos al crud
 $obj = new CrudEditorial;
 $datos = $obj->_listadoEditorial();
 $tabla = '<table class="table table-striped table-bordered table-hover" id="dataTables-example">

@@ -1,4 +1,4 @@
-<?php include "../../data/crudGenero.php"; //llamamos al crud
+<?php include_once "../../data/crudGenero.php"; //llamamos al crud
 $obj = new CrudGenero;
 $datos = $obj->_listadoGenero();
 $tabla = '<table class="table table-striped table-bordered table-hover" id="dataTables-example">

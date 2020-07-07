@@ -1,4 +1,4 @@
-<?php include "../../data/crudGenero.php"; //llamamos al crud
+<?php include_once "../../data/crudGenero.php"; //llamamos al crud
 $genero = $_POST['txtnombrege'];
 $datos = array(
     'genero' =>  strtoupper($_POST['txtnombrege']),

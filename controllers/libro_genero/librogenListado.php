@@ -1,4 +1,4 @@
-<?php include "../../data/crudLibGen.php"; //llamamos al crud
+<?php include_once "../../data/crudLibGen.php"; //llamamos al crud
 $obj = new CrudLibGen();
 $datos = $obj->_listadoLibGen();
 $tabla = '<table class="table table-striped table-bordered table-hover" id="dataTables-example">

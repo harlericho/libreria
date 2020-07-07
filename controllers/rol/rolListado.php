@@ -1,4 +1,4 @@
-<?php include "../../data/crudRol.php"; //llamamos al crud
+<?php include_once "../../data/crudRol.php"; //llamamos al crud
 $obj = new CrudRol;
 $datos = $obj->_listadoRol();
 $tabla = '<table class="table table-striped table-bordered table-hover" id="dataTables-example">

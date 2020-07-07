@@ -1,4 +1,4 @@
-<?php include "../../data/crudLibros.php"; //llamamos al crud
+<?php include_once "../../data/crudLibros.php"; //llamamos al crud
 
 if (($_FILES['filelibed']['name'] == null)) {
     $datos = array(

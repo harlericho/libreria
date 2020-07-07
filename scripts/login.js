@@ -5,15 +5,44 @@ function registro() {
     }
 }
 
+function login() {
+    if (validacionLogin() == true) {
+        let formData = $("#formLogin").serialize();//pasamos todas las variables del formulario
+        ajaxLogin(formData);
+        //console.log(formData);
+    }
+}
+//funcion ajax para el ingreso de los datos del login
+function ajaxLogin(datos) {
+    $.ajax({
+        type: "POST",
+        url: "../controllers/perfil/login.php",
+        data: datos,
+        cache: "false",
+        success: function (response) {
+            if (response == 1) {
+                toastr.success("Bienvenido!", "Aviso!");
+                setTimeout("redirectMain()", 1000);
+            } else if (response == 2) {
+                toastr.warning("Usuario o contraseña no existe, verifique!", "Aviso!");
+                $("#email").focus();
+            } 
+        }
+    });
+}
+
+
+
+
 //funcion ajax para el ingreso de los datos del registro
 function ajaxRegistro(datos) {
     $.ajax({
         type: "POST",
-        url: "../controllers/registro.php",
+        url: "../controllers/perfil/registro.php",
         data: datos,
         cache: "false",
         success: function (response) {
-            if (response==1) {
+            if (response == 1) {
                 toastr.success("Usuario registrado!", "Aviso!");
                 $("#formRegistro")[0].reset();
                 $("#txtnombres").focus();
@@ -28,7 +57,26 @@ function ajaxRegistro(datos) {
     });
 }
 
-
+//funcion para validar campos
+function validacionLogin() {
+    let email = $("#email").val();
+    let pass = $("#password").val();
+    if ($.trim(email) == "") {
+        toastr.error("Ingrese su email", "Aviso!");
+        $("#email").focus();
+        return false;
+    } else if ($.trim(pass) == "") {
+        toastr.error("Ingrese su cotraseña", "Aviso!");
+        $("#password").focus();
+        return false;
+    } else if ($.trim(email) != "") {
+        if (validacionEmail2(email) == true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
 
 //funcion para validar campos
 function validacionRegisitro() {
@@ -80,6 +128,18 @@ function validacionEmail(valor) {
         return false;
     }
 }
+
+//funcion para validar el email
+function validacionEmail2(valor) {
+    emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    if (emailRegex.test(valor)) {
+        return true;
+    } else {
+        toastr.error("Formato de email no es valido", "Aviso!");
+        $('#email').focus();
+        return false;
+    }
+}
 //funcion para validar la igual de las contraseñas
 function validacionPasswords() {
     let pass = $("#txtpass").val();
@@ -91,4 +151,8 @@ function validacionPasswords() {
         $("#txtpassc").focus();
         return false;
     }
+}
+//funcion para dirigir a una pagina url
+function redirectMain() {
+    $(location).attr('href', '../views/main.php');
 }

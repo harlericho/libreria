@@ -1,4 +1,4 @@
-<?php include "../../data/crudAutor.php"; //llamamos al crud
+<?php include_once "../../data/crudAutor.php"; //llamamos al crud
 $obj = new CrudAutor;
 $datos = $obj->_listadoAutor();
 $tabla = '<table class="table table-striped table-bordered table-hover" id="dataTables-example">

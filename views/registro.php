@@ -1,4 +1,4 @@
-<?php include "../templates/header.php"; ?>
+<?php include_once "../templates/header.php"; ?>
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
@@ -59,7 +59,7 @@
         </div>
     </div>
 </div>
-<?php include "../templates/footer.php"; ?>
+<?php include_once "../templates/footer.php"; ?>
 <script src="../scripts/login.js" type="text/javascript"></script>
 
 <script type="text/javascript">

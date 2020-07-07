@@ -1,4 +1,4 @@
-<?php include "../templates/header.php"; ?>
+<?php include_once "../templates/header.php"; ?>
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
@@ -15,19 +15,19 @@
                     </center>
                 </div>
                 <div class="panel-body">
-                    <form role="form">
+                    <form role="form" id="formLogin">
                         <fieldset>
                             <div class="form-group">
-                                <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                <input class="form-control" placeholder="E-mail" id="email" name="email" type="email" autofocus>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Contraseña" name="password" type="password" value="">
+                                <input class="form-control" placeholder="Contraseña" id="password" name="password" type="password" value="">
                             </div>
                             <div class="checkbox">
 
                             </div>
                             <!-- Change this to a button or input when using this as a form -->
-                            <a href="index.html" class="btn btn-lg btn-success btn-block">
+                            <a class="btn btn-lg btn-success btn-block" onclick="login()">
                                 <i class="fa fa-sign-in"></i>
                                 Entrar</a>
                         </fieldset>
@@ -54,5 +54,5 @@
         </div>
     </div>
 </div>
-<?php include "../templates/footer.php"; ?>
+<?php include_once "../templates/footer.php"; ?>
 <script src="../scripts/login.js" type="text/javascript"></script>

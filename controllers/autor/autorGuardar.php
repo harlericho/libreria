@@ -1,4 +1,4 @@
-<?php include "../../data/crudAutor.php"; //llamamos al crud
+<?php include_once "../../data/crudAutor.php"; //llamamos al crud
 $nombre = $_POST['txtnombreau'];
 $email = $_POST['txtemailau'];
 $datos = array(

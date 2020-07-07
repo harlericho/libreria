@@ -1,4 +1,4 @@
-<?php include "conexion.php";
+<?php include_once "conexion.php";
 
 class CrudLibGen extends Conexion
 {

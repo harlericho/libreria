@@ -1,4 +1,4 @@
-<?php include "../../data/crudLibros.php"; //llamamos al crud
+<?php include_once "../../data/crudLibros.php"; //llamamos al crud
 foreach (CrudLibros::_obtenerID($_POST['id']) as $key => $value) {
     $datos = array(
         'id_libro' => $value['id_libro'],

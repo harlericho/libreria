@@ -1,4 +1,4 @@
-<?php include "conexion.php"; //llamamos la base
+<?php include_once "conexion.php"; //llamamos la base
 class CrudStock extends Conexion
 {
     static function _listadoStock()

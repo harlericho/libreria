@@ -1,4 +1,4 @@
-<?php include "../data/crudLoginRegistro.php"; //llamamos al crud
+<?php include_once "../../data/crudUsuario.php"; //llamamos al crud
 include "../data/sha1.php "; //llamamos al sha1
 $dni = $_POST['txtdni'];
 $email = $_POST['txtemail'];

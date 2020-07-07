@@ -1,4 +1,4 @@
-<?php include "../../data/crudPais.php"; //llamamos al crud
+<?php include_once "../../data/crudPais.php"; //llamamos al crud
 $obj = new CrudPais;
 $datos = $obj->_listadoPais();
 $tabla = '<table class="table table-striped table-bordered table-hover" id="dataTables-example">

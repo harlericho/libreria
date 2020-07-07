@@ -1,6 +1,6 @@
-<?php include "../templates/header.php" ?>
+<?php include_once "../templates/header.php" ?>
 <div id="wrapper">
-    <?php include "../templates/nav.php" ?>
+    <?php include_once "../templates/nav.php" ?>
     <!-- Page Content -->
     <div id="page-wrapper">
         <div class="container-fluid">
@@ -8,7 +8,7 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">Sistema Libreria</h1>
                 </div>
-                <?php include "../models/listadoLibros.php"; ?>
+                <?php include_once "../models/listadoLibros.php"; ?>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
@@ -17,8 +17,8 @@
     </div>
     <!-- /#page-wrapper -->
 </div>
-<?php include "../models/modalPresentacion.php" ?>
-<?php include "../templates/footer.php" ?>
+<?php include_once "../models/modalPresentacion.php" ?>
+<?php include_once "../templates/footer.php" ?>
 
 <script type="text/javascript">
     vistaGeneralLibros();

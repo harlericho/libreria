@@ -1,4 +1,4 @@
-<?php include "../../data/crudAutor.php"; //llamamos al crud
+<?php include_once "../../data/crudAutor.php"; //llamamos al crud
 $estado = 'I';
 $datos = array(
     'id_autor' => $_POST['txtidauel'],

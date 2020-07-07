@@ -1,4 +1,4 @@
-<?php include "../../data/crudStock.php"; //llamamos al crud
+<?php include_once "../../data/crudStock.php"; //llamamos al crud
 $obj = new CrudStock();
 $datos = $obj->_listadoStock();
 $tabla = '<table class="table table-striped table-bordered table-hover" id="dataTables-example">
