@@ -52,4 +52,19 @@ class CrudLoginRegistro extends Conexion
         $query->execute();
         return $query->fetchAll();
     }
+
+    //modificamos un datos personales del usuario 
+    static function _modificarUsuario($datos)
+    {
+        $sql = "UPDATE usuario SET nombres=:nombres,direccion=:direccion,fecha_nacimiento=:fecha,telefono=:telefono
+        WHERE id_usuario=:id_usuario";
+        $query = Conexion::_conectarBD()->prepare($sql);
+        $query->bindParam(":nombres", $datos['nombres'], PDO::PARAM_STR);
+        $query->bindParam(":direccion", $datos['direccion'], PDO::PARAM_STR);
+        $query->bindParam(":fecha", $datos['fecha'], PDO::PARAM_STR);
+        $query->bindParam(":telefono", $datos['telefono'], PDO::PARAM_STR);
+        $query->bindParam(":id_usuario", $datos['id_usuario'], PDO::PARAM_INT);
+        return $query->execute();
+    }
+
 }

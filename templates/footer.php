@@ -1,7 +1,7 @@
         <!-- jQuery -->
         <script src="../dist/jquery-3.5.1.js" type="text/javascript"></script>
         <script src="../dist/toastr/toastr.min.js" type="text/javascript"></script>
-      
+        
 
         <script src="../dist/js/jquery.min.js"></script>
 

@@ -18,3 +18,7 @@
     <!-- /#page-wrapper -->
 </div>
 <?php include "../templates/footer.php" ?>
+
+<script type="text/javascript">
+    focusInicial();
+</script>

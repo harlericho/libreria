@@ -26,7 +26,7 @@ function ajaxLogin(datos) {
             } else if (response == 2) {
                 toastr.warning("Usuario o contraseña no existe, verifique!", "Aviso!");
                 $("#email").focus();
-            } 
+            }
         }
     });
 }
@@ -77,7 +77,6 @@ function validacionLogin() {
         }
     }
 }
-
 //funcion para validar campos
 function validacionRegisitro() {
     let names = $("#txtnombres").val();
