@@ -49,7 +49,7 @@ foreach (CrudLoginRegistro::_obtenerUser($_SESSION['usuario']) as $key => $value
                                         <input class="form-control" id="emailnousu" name="emailnousu" type="email" placeholder="E-mail"  value="<?php echo $email ?>" readonly="readonly">
                                     </div>
                                     <div class="form-group col-sm-12">
-                                        <a type="submit" class="btn btn-primary" title="Modificar" onclick="modificarUsu()"><i class="fa fa-edit"></i> Modificar</a>
+                                        <a href="#" type="submit" class="btn btn-primary" title="Modificar" onclick="modificarUsu()"><i class="fa fa-edit"></i> Modificar</a>
                                     </div>
                                 </fieldset>
                             </form>

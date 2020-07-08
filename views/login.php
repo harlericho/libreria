@@ -27,7 +27,7 @@
 
                             </div>
                             <!-- Change this to a button or input when using this as a form -->
-                            <a class="btn btn-lg btn-success btn-block" onclick="login()">
+                            <a href="#" class="btn btn-lg btn-success btn-block" onclick="login()">
                                 <i class="fa fa-sign-in"></i>
                                 Entrar</a>
                         </fieldset>
