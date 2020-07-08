@@ -42,7 +42,7 @@ foreach (CrudLoginRegistro::_obtenerUser($_SESSION['usuario']) as $key => $value
                                     </div>
                                     <div class="form-group col-sm-6">
                                         <label for="disabledSelect">Telefono:</label>
-                                        <input class="form-control" id="telefonousu" name="telefonousu" type="number" placeholder="Telefooo" value="<?php echo $telefono ?>">
+                                        <input class="form-control" id="telefonousu" name="telefonousu" type="number" onkeyup="return soloNumeros(event)" placeholder="Telefooo" value="<?php echo $telefono ?>">
                                     </div>
                                     <div class="form-group col-sm-12">
                                         <label for="disabledSelect">Email:</label>
@@ -62,3 +62,11 @@ foreach (CrudLoginRegistro::_obtenerUser($_SESSION['usuario']) as $key => $value
     </div>
 <?php } ?>
 <script src="../scripts/usuario.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    // Solo permite ingresar numeros.
+    function soloNumeros(e) {
+        var key = window.Event ? e.which : e.keyCode
+        return (key >= 48 && key <= 57)
+    }
+</script>
